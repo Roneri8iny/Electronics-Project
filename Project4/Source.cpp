@@ -16,15 +16,18 @@ Servo servo;
 
 void setup() {
 	// put your setup code here, to run once:
-
-	pinMode(6, INPUT);
-	pinMode(8, INPUT);
-	pinMode(7, INPUT);
-	pinMode(13, OUTPUT);
-	pinMode(10, OUTPUT);
-	pinMode(11, OUTPUT);
-	pinMode(3, OUTPUT);
-	pinMode(4, OUTPUT);
+	pinMode(motor1, OUTPUT);
+	pinMode(motorr1, OUTPUT);
+	pinMode(motor2, OUTPUT);
+	pinMode(motorr2, OUTPUT);
+	pinMode(motor3, OUTPUT);
+	pinMode(motorr3, OUTPUT);
+	pinMode(motor4, OUTPUT);
+	pinMode(motorr4, OUTPUT);
+	pinMode(rightIr, INPUT);
+	pinMode(leftIr, INPUT);
+	pinMode(frontIr, INPUT);
+	pinMode(buzzer, OUTPUT);
 	servo.attach(A0);
 	servo.write(0);
 
